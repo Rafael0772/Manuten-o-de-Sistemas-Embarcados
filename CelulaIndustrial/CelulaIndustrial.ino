@@ -8,13 +8,16 @@
 #define RESETARMAZEMBRANCO 9
 #define RESETARMAZEMPRETO 10
 #define ALARME 11
+
 int contador_armazem_metal = 0;
 int contador_armazem_branco = 0;
 int contador_armazem_preto = 0;
+//PROTOTIPAGEM DE FUNÇÕES
 bool detectarItem();
 String definirTipoDeItem();
 bool verificarDisponibilidadeDoArmazem(String tipo_item);
 void transportarItemArmazem(String tipo_item);
+
 void setup() {
   pinMode(CAPACITIVO, INPUT);
   pinMode(INDUTIVO, INPUT);
